@@ -1,0 +1,129 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 0 24px 215px;
+  width: 1600px;
+  height: 80px;
+  border-bottom: 10px solid #ececec;
+}
+
+.main-menu {
+  display: flex;
+  gap: 50px;
+  padding-left: 93px;
+  padding-right: 376px;
+}
+
+.link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+:active {
+  color: #2196f3;
+}
+
+.link-top-menu1::after {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 453px;
+  top: 76px;
+  display: none;
+}
+
+.link-top-menu2::after {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 545px;
+  top: 76px;
+  display: none;
+}
+
+.link-top-menu3::after {
+  position: absolute;
+  content: "";
+  width: 53px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  left: 660px;
+  top: 76px;
+  display: none;
+}
+
+.link-top-menu1:hover::after,
+.link-top-menu2:hover::after,
+.link-top-menu3:hover::after,
+.link-top-menu1:focus::after,
+.link-top-menu2:focus::after,
+.link-top-menu3:focus::after {
+  display: inline;
+}
+
+.top-contacts {
+  padding-left: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.email-tel {
+  display: flex;
+  gap: 40px;
+}
+
+.email,
+.tel {
+  width: 16px;
+  height: 16px;
+}
+
+.email-group {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  fill: currentColor;
+}
+
+div .email-group:hover {
+  color: #2196f3;
+  cursor: pointer;
+}
+
+.tel-group {
+  display: flex;
+  align-items: center;
+  color: #757575;
+  fill: currentColor;
+}
+
+div .tel-group:hover {
+  color: #2196f3;
+  cursor: pointer;
+}

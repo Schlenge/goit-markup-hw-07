@@ -1,0 +1,96 @@
+.portofolio-products ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+  gap: 30px;
+  padding-left: 215px;
+}
+
+.portofolio-products li {
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+
+/*textele din caseta nu sunt aliniate perfect
+ - apare o margine de 16px care nu stiu de unde provine*/
+.product-name {
+  position: absolute;
+  height: 110px;
+  width: 370px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+.product-name h4 {
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-top: 20px;
+  margin: 0%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.product-name p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin: 0%;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.overlay {
+  top: 3px;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+  transform: translatey(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+  position: absolute;
+}
+
+.card:hover .overlay {
+  transform: translatey(0%);
+}
+
+.overlay p {
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
