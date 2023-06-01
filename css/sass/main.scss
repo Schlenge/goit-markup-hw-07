@@ -1,18 +1,25 @@
+@import "../sass/utils/reset";
+
 /*external*/
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 /*internal*/
-/*common*/
+/*commons*/
 @import "../sass/utils/variables";
-@import "../sass/components/page-header";
 @import "../sass/components/logo";
+@import "../sass/components/page-header";
+@import "../sass/components/buttons";
+@import "../sass/components/footer";
+
 /*Index page*/
 @import "../sass/components/hero-section";
+@import "../sass/components/modal";
+@import "../sass/components/form";
 @import "../sass/components/advantages";
 @import "../sass/components/what-we-do";
 @import "../sass/components/team";
 @import "../sass/components/customers";
-@import "../sass/components/footer";
+
 /*Portofolio page*/
 @import "../sass/components/filtru-menu";
 @import "../sass/components/products";

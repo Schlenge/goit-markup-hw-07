@@ -4,17 +4,18 @@
   padding: 24px 0 24px 215px;
   width: 1600px;
   height: 80px;
-  border-bottom: 10px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
-.main-menu {
+.page-header__nav {
   display: flex;
   gap: 50px;
   padding-left: 93px;
-  padding-right: 376px;
+  padding-right: 339px;
 }
 
-.link {
+.page-header__link {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -22,67 +23,69 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-}
-
-a:link {
   text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover,
+  :active {
+    color: $accent-color;
+  }
 }
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover,
-:active {
-  color: #2196f3;
-}
-
-.link-top-menu1::after {
+.page-header__nav--1::after {
   position: absolute;
   content: "";
+  height: 4px;
+  border-radius: 2px;
+  background: $accent-color;
+  display: none;
+  top: 76px;
   width: 42px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
   left: 453px;
-  top: 76px;
-  display: none;
 }
 
-.link-top-menu2::after {
+.page-header__nav--2::after {
   position: absolute;
   content: "";
+  height: 4px;
+  border-radius: 2px;
+  background: $accent-color;
+  display: none;
+  top: 76px;
   width: 66px;
-  height: 4px;
-  background: #2196f3;
-  border-radius: 2px;
   left: 545px;
-  top: 76px;
-  display: none;
 }
 
-.link-top-menu3::after {
+.page-header__nav--3::after {
   position: absolute;
   content: "";
-  width: 53px;
   height: 4px;
-  background: #2196f3;
   border-radius: 2px;
-  left: 660px;
-  top: 76px;
+  background: $accent-color;
   display: none;
+  top: 76px;
+  width: 53px;
+  left: 660px;
 }
 
-.link-top-menu1:hover::after,
-.link-top-menu2:hover::after,
-.link-top-menu3:hover::after,
-.link-top-menu1:focus::after,
-.link-top-menu2:focus::after,
-.link-top-menu3:focus::after {
+.page-header__nav--1:hover::after,
+.page-header__nav--2:hover::after,
+.page-header__nav--3:hover::after,
+.page-header__nav--1:focus::after,
+.page-header__nav--2:focus::after,
+.page-header__nav--3:focus::after {
   display: inline;
 }
 
-.top-contacts {
+.email-tel {
+  display: flex;
+  gap: 40px;
+}
+
+.email-tel__contacts {
   padding-left: 10px;
   font-family: "Roboto";
   font-style: normal;
@@ -91,39 +94,25 @@ a:hover,
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #757575;
+  &:hover {
+    color: #2196f3;
+    cursor: pointer;
+  }
 }
 
-.email-tel {
-  display: flex;
-  gap: 40px;
-}
-
-.email,
-.tel {
+.email-tel__icon {
   width: 16px;
   height: 16px;
+  color: currentColor;
 }
 
-.email-group {
+.email-tel__email,
+.email-tel__tel {
   display: flex;
   align-items: center;
   color: #757575;
-  fill: currentColor;
-}
-
-div .email-group:hover {
-  color: #2196f3;
-  cursor: pointer;
-}
-
-.tel-group {
-  display: flex;
-  align-items: center;
-  color: #757575;
-  fill: currentColor;
-}
-
-div .tel-group:hover {
-  color: #2196f3;
-  cursor: pointer;
+  &:hover {
+    color: #2196f3;
+    cursor: pointer;
+  }
 }

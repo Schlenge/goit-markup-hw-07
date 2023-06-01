@@ -1,3 +1,5 @@
+@use "../utils/variables";
+
 .modal {
   position: absolute;
   width: 1600px;
@@ -25,8 +27,11 @@
   visibility: hidden;
 }
 
-.close-btn {
+.modal-content__close-btn {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   left: 490px;
@@ -34,6 +39,7 @@
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .close-btn:hover,

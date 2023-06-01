@@ -1,18 +1,15 @@
-.our-team {
+.team {
   background: #f5f4fa;
   width: 1600px;
   height: 708px;
-  left: 0px;
-  top: 1449px;
+  &__people {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
 }
 
-.people-our-team {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.people-our-team li {
+.team__card {
   width: 270px;
   height: 428px;
   background: #fff;
@@ -21,7 +18,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.name {
+.team__people-name {
   display: flex;
   justify-content: center;
   padding-top: 30px;
@@ -33,11 +30,11 @@
   line-height: 19px;
   letter-spacing: 0.03em;
   background-color: #fff;
-  color: #212121;
+  color: $dark;
   margin: 0%;
 }
 
-.job-description {
+.team__people-job {
   display: flex;
   justify-content: center;
   padding-bottom: 16px;
@@ -48,18 +45,18 @@
   line-height: 19px;
   letter-spacing: 0.03em;
   background-color: #fff;
-  color: #757575;
+  color: $light;
   margin: 0%;
 }
 
-.sm-icons {
+.team__sm-icons {
   display: flex;
   gap: 10px;
   position: absolute;
   padding-left: 32px;
 }
 
-.box-sm-team {
+.team__sm-icons--item {
   width: 44px;
   height: 44px;
   display: flex;
@@ -67,20 +64,18 @@
   justify-content: center;
   border-radius: 50%;
   background: #ffffff;
+  &:hover {
+    background: $accent-color;
+    border-radius: 50%;
+    transition: var(--transition);
+  }
 }
 
-.icon-sm {
+.team__sm-icons--icon {
   width: 20px;
   height: 20px;
-  color: #757575;
-}
-
-.icon-sm:hover {
-  color: #ffffff;
-}
-.box-sm-team:hover {
-  background: #2196f3;
-  border-radius: 50%;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  color: $light;
+  &:hover {
+    color: #ffffff;
+  }
 }

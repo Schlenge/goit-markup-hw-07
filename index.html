@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles/main.min.css" />
+    <link rel="stylesheet" href="../css/styles/main.min.css" />
     <title>WebStudio</title>
     <!--Normalizarea-->
     <link
@@ -14,27 +14,33 @@
   </head>
   <body>
     <!--Header-->
-    <header class="container page-header">
+    <header class="page-header">
       <div class="logo">
-        <p class="logo__text">WEB<span class="logo--dark">STUDIO</span></p>
+        <p class="logo__text">Web<span class="logo--dark">Studio</span></p>
       </div>
-      <div class="main-menu">
-        <div class="link-top-menu1"><a class="link" href="index.html">Studio</a></div>
-        <div class="link-top-menu2"><a class="link" href="portofolio.html">Portofolio</a></div>
-        <div class="link-top-menu3"><a class="link" href="contact.html">Contact</a></div>
+      <div class="page-header__nav">
+        <div class="page-header__nav--1">
+          <a class="page-header__link" href="index.html">Studio</a>
+        </div>
+        <div class="page-header__nav--2">
+          <a class="page-header__link" href="portofolio.html">Portofolio</a>
+        </div>
+        <div class="page-header__nav--3">
+          <a class="page-header__link" href="contact.html">Contact</a>
+        </div>
       </div>
       <div class="email-tel">
-        <div class="email-group">
-          <svg class="email">
+        <div class="email-tel__email">
+          <svg class="email-tel__icon">
             <use xlink:href="../images/sprite-svg/contacts-top-defs.svg#icon-envelope" />
           </svg>
-          <a class="top-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="email-tel__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </div>
-        <div class="tel-group">
-          <svg class="tel">
+        <div class="email-tel__tel">
+          <svg class="email-tel__icon">
             <use xlink:href="../images/sprite-svg/contacts-top-defs.svg#icon-smartphone" />
           </svg>
-          <a class="top-contacts" href="tel:+12127724150">+1 212-772-4150</a>
+          <a class="email-tel__contacts" href="tel:+12127724150">+1 212-772-4150</a>
         </div>
       </div>
     </header>
@@ -43,233 +49,224 @@
       <!--hero section-->
       <div>
         <section class="section top-section">
-          <h1 class="brand-slogan">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button data-modal-open class="service-btn">Request our service</button>
+          <h1 class="top-section__slogan">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+          <button data-modal-open class="btn top-section__btn">Request our service</button>
         </section>
       </div>
       <!--Features section-->
       <div class="container">
         <section class="section advantages">
           <div class="features-card">
-            <div class="box-features">
-              <svg class="icon-features">
+            <div class="features-card__box">
+              <svg class="features-card__icon">
                 <use href="./images/sprite-svg/advantages-defs.svg#icon-antenna" />
               </svg>
             </div>
-            <h5>ATTENTION TO DETAILS</h5>
-            <span>
-              <p>
-                We go into all the details and processes of your business to develop a customized
-                solution.
-              </p>
-            </span>
+            <h5 class="features-card__title">ATTENTION TO DETAILS</h5>
+            <p class="features-card__text">
+              We go into all the details and processes of your business to develop a customized
+              solution.
+            </p>
           </div>
           <div class="features-card">
-            <div class="box-features">
-              <svg class="icon-features">
+            <div class="features-card__box">
+              <svg class="features-card__icon">
                 <use href="./images/sprite-svg/advantages-defs.svg#icon-astronaut" />
               </svg>
             </div>
-            <h5>PUNCTUALITY</h5>
-            <span>
-              <p>
-                With us, you can feel safe and secure. An important principle of the company:
-                respect your time and deadlines.
-              </p>
-            </span>
+            <h5 class="features-card__title">PUNCTUALITY</h5>
+            <p class="features-card__text">
+              With us, you can feel safe and secure. An important principle of the company: respect
+              your time and deadlines.
+            </p>
           </div>
           <div class="features-card">
-            <div class="box-features">
-              <svg class="icon-features">
+            <div class="features-card__box">
+              <svg class="features-card__icon">
                 <use href="./images/sprite-svg/advantages-defs.svg#icon-clock" />
               </svg>
             </div>
-            <h5>PLANNING</h5>
-            <span>
-              <p>
-                You will be able to observe and participate in every phase of solution development
-                and implementation.
-              </p>
-            </span>
+            <h5 class="features-card__title">PLANNING</h5>
+            <p class="features-card__text">
+              You will be able to observe and participate in every phase of solution development and
+              implementation.
+            </p>
           </div>
           <div class="features-card">
-            <div class="box-features">
-              <svg class="icon-features">
+            <div class="features-card__box">
+              <svg class="features-card__icon">
                 <use href="./images/sprite-svg/advantages-defs.svg#icon-diagram" />
               </svg>
             </div>
-            <h5>MODERN TECHNOLOGIES</h5>
-            <span>
-              <p>
-                We use innovative tools to solve assigned tasks. It's time to simplify work
-                processes.
-              </p>
-            </span>
+            <h5 class="features-card__title">MODERN TECHNOLOGIES</h5>
+            <p class="features-card__text">
+              We use innovative tools to solve assigned tasks. It's time to simplify work processes.
+            </p>
           </div>
         </section>
         <!--What we do section-->
-        <section class="section">
-          <div class="what-we-do">
-            <h2 class="section-title">What we do</h2>
-            <ul class="what-we-do-img">
+        <section class="section what-we-do">
+          <div class="we-do">
+            <h2 class="section__title">What we do</h2>
+            <ul class="we-do__img">
               <li>
                 <img src="images/what-we-do-1.jpg" alt="service-1" style="width: auto" />
-                <p class="service s1">DESKTOP APPS</p>
+                <p class="we-do__service">DESKTOP APPS</p>
               </li>
               <li>
                 <img src="images/what-we-do-2.jpg" alt="service-2" style="width: auto" />
-                <p class="service s2">MOBILE APPS</p>
+                <p class="we-do__service">MOBILE APPS</p>
               </li>
               <li>
                 <img src="images/what-we-do-3.jpg" alt="service-3" style="width: auto" />
-                <p class="service s3">DESIGN SOLUTIONS</p>
+                <p class="we-do__service">DESIGN SOLUTIONS</p>
               </li>
             </ul>
           </div>
         </section>
         <!--our team section-->
-        <section class="section our-team">
+        <section class="section team">
           <div>
-            <h2 class="section-title">Our Team</h2>
-            <ul class="people-our-team">
-              <li>
+            <h2 class="section__title">Our Team</h2>
+            <ul class="team__people">
+              <li class="team__card">
                 <img
                   src="images/christopher-walker.jpg"
                   alt="christopher-walker"
                   style="width: auto"
                 />
-                <p class="name">Christopher Walker</p>
-                <p class="job-description">Product Designer</p>
-                <div class="sm-icons">
-                  <div class="box-sm-team">
+                <p class="team__people-name">Christopher Walker</p>
+                <p class="team__people-job">Product Designer</p>
+                <div class="team__sm-icons">
+                  <div class="team__sm-icons--item">
                     <a href="https://www.instagram.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-instagram1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://twitter.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-twitter1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://facebook.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-facebook1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://linkedin.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-linkedin1" />
                       </svg>
                     </a>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="team__card">
                 <img src="images/kylie-evans.jpg" alt="kylie-evans" style="width: auto" />
-                <p class="name">Kylie Evans</p>
-                <p class="job-description">Frontend Developer</p>
-                <div class="sm-icons">
-                  <div class="box-sm-team">
+                <p class="team__people-name">Kylie Evans</p>
+                <p class="team__people-job">Frontend Developer</p>
+                <div class="team__sm-icons">
+                  <div class="team__sm-icons--item">
                     <a href="https://www.instagram.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-instagram1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://twitter.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-twitter1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://facebook.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-facebook1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://linkedin.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-linkedin1" />
                       </svg>
                     </a>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="team__card">
                 <img src="images/ryan-harris.jpg" alt="ryan-harris" style="width: auto" />
-                <p class="name">Ryan Harris</p>
-                <p class="job-description">Marketing</p>
-                <div class="sm-icons">
-                  <div class="box-sm-team">
+                <p class="team__people-name">Ryan Harris</p>
+                <p class="team__people-job">Marketing</p>
+                <div class="team__sm-icons">
+                  <div class="team__sm-icons--item">
                     <a href="https://www.instagram.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-instagram1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://twitter.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-twitter1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://facebook.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-facebook1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://linkedin.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-linkedin1" />
                       </svg>
                     </a>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="team__card">
                 <img src="images/tyler-moore.jpg" alt="tyler-moore" style="width: auto" />
-                <p class="name">Tyler Moore</p>
-                <p class="job-description">UI Designer</p>
-                <div class="sm-icons">
-                  <div class="box-sm-team">
+                <p class="team__people-name">Tyler Moore</p>
+                <p class="team__people-job">UI Designer</p>
+                <div class="team__sm-icons">
+                  <div class="team__sm-icons--item">
                     <a href="https://www.instagram.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-instagram1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://twitter.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-twitter1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://facebook.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-facebook1" />
                       </svg>
                     </a>
                   </div>
-                  <div class="box-sm-team">
+                  <div class="team__sm-icons--item">
                     <a href="https://linkedin.com/" class="icon">
-                      <svg class="icon-sm">
+                      <svg class="team__sm-icons--icon">
                         <use href="./images/sprite-svg/sm-defs.svg#icon-linkedin1" />
                       </svg>
                     </a>
@@ -281,35 +278,35 @@
         </section>
         <!--customers-->
         <section class="section customers">
-          <h2 class="section-title">Regular Customers</h2>
-          <div class="regular-customers">
-            <div class="box-customers">
-              <svg class="icon-customers">
+          <h2 class="section__title">Regular Customers</h2>
+          <div class="costumers__block">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-1" />
               </svg>
             </div>
-            <div class="box-customers">
-              <svg class="icon-customers">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-2" />
               </svg>
             </div>
-            <div class="box-customers">
-              <svg class="icon-customers">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-3" />
               </svg>
             </div>
-            <div class="box-customers">
-              <svg class="icon-customers">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-4" />
               </svg>
             </div>
-            <div class="box-customers">
-              <svg class="icon-customers">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-5" />
               </svg>
             </div>
-            <div class="box-customers">
-              <svg class="icon-customers">
+            <div class="costumers__box">
+              <svg class="costumers--icon">
                 <use href="./images/sprite-svg/customers-defs.svg#icon-Logo-6" />
               </svg>
             </div>
@@ -319,43 +316,50 @@
       <!--footer-->
       <footer class="footer">
         <div>
-          <h2 class="footer-logo">
-            <span class="logo-part1">Web</span><span class="logo-part3">Studio</span>
-          </h2>
-          <address class="address">695 Park Ave, NY 10065, USA</address>
-          <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="footer-contacts" href="tel:+12127724150">+1 212-772-4150</a>
+          <div class="footer__logo">
+            <p class="logo__text">Web<span class="logo--white">Studio</span></p>
+          </div>
+          <address class="footer__address">695 Park Ave, NY 10065, USA</address>
+          <a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="footer__contacts" href="tel:+12127724150">+1 212-772-4150</a>
         </div>
-        <div class="social-footer">
-          <div class="find-on-us">
-            <p class="footer-connections">FIND US ON</p>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+        <div class="footer__social">
+          <div>
+            <p class="footer__action-text">FIND US ON</p>
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-instagram-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-twitter-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-facebook-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-linkedin-f" />
               </svg>
             </div>
           </div>
           <div class="newsletter">
-            <p class="footer-connections">SUSCRIBE TO NEWSLETTER</p>
-            <div class="form-newsletter">
-              <input type="text" name="email" id="email" placeholder="E-mail" required />
-              <button type="submit" class="btn-submit-newsletter">
-                <span>Suscribe</span>
+            <p class="footer__action-text">SUSCRIBE TO NEWSLETTER</p>
+            <div class="newsletter_form">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+                class="newsletter--input"
+              />
+              <button type="submit" class="newsletter__btn">
+                <span class="newsletter__btn--text">Suscribe</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                   <path
                     fill="#fff"
@@ -372,47 +376,47 @@
     <!-- Modal -->
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-btn" data-modal-close>&times;</button>
+        <button class="modal-content__close-btn" data-modal-close>&times;</button>
         <!-- Form -->
         <form action="" method="get" name="request-service" autocomplete="off" class="form">
-          <div>
-            <p class="title-form">Leave your information and we'll call you back</p>
-            <div class="form-fields">
-              <div class="field">
-                <svg class="svg-form">
+          <div class="form">
+            <p class="form__title">Leave your information and we'll call you back</p>
+            <div class="form__block">
+              <div class="form__field">
+                <svg class="form__svg">
                   <use href="./images/sprite-svg/form-defs.svg#icon-person-form"></use>
                 </svg>
-                <label for="name"> <span>Name</span> </label>
-                <input type="text" name="name" id="name" required />
+                <label for="name"> <span class="form__label">Name</span> </label>
+                <input type="text" name="name" id="name" required class="form__input" />
               </div>
-              <div class="field">
-                <svg class="svg-form">
+              <div class="form__field">
+                <svg class="form__svg">
                   <use href="./images/sprite-svg/form-defs.svg#icon-phone-form"></use>
                 </svg>
-                <label for="telephone"> <span>Telephone</span> </label>
-                <input type="number" name="telephone" id="telephone" required />
+                <label for="telephone"> <span class="form__label">Telephone</span> </label>
+                <input type="number" name="telephone" id="telephone" required class="form__input" />
               </div>
-              <div class="field">
-                <svg class="svg-form">
+              <div class="form__field">
+                <svg class="form__svg">
                   <use href="./images/sprite-svg/form-defs.svg#icon-email-form"></use>
                 </svg>
-                <label for="email"> <span>E-mail</span> </label>
-                <input type="text" name="email" id="email" required />
+                <label for="email"> <span class="form__label">E-mail</span> </label>
+                <input type="text" name="email" id="email" required class="form__input" />
               </div>
-              <div class="field">
-                <label for="comments"> <span>Comments</span> </label>
-                <textarea class="textarea" id="message" rows="5" placeholder="Enter the text">
+              <div class="form__field">
+                <label for="comments"> <span class="form__label">Comments</span> </label>
+                <textarea class="form__textarea" id="message" rows="5" placeholder="Enter the text">
                 </textarea>
               </div>
             </div>
-            <div class="agree-terms">
-              <input class="checked" type="checkbox" />
-              <p>
+            <div class="form__agree-terms">
+              <input type="checkbox" class="checked" />
+              <p class="form__agree-terms--text">
                 I agree with the letter and accept the
-                <span><a class="terms" href="">Terms and Conditions </a></span>
+                <span class="form__agree-terms--link"><a href="">Terms and Conditions </a></span>
               </p>
             </div>
-            <button type="submit" class="btn-submit-form"><span>Send</span></button>
+            <button type="submit" class="btn form__btn-submit"><span>Send</span></button>
           </div>
         </form>
       </div>

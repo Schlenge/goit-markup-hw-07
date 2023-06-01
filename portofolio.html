@@ -13,149 +13,150 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header-navigation">
-      <div>
-        <a href="index.html"></a>
-        <h2><span class="logo-part1">Web</span><span class="logo-part2">Studio</span></h2>
+    <header class="page-header">
+      <div class="logo">
+        <p class="logo__text">Web<span class="logo--dark">Studio</span></p>
       </div>
-      <div class="main-menu">
-        <div class="link-top-menu1"><a class="link" href="index.html">Studio</a></div>
-        <div class="link-top-menu2"><a class="link" href="portofolio.html">Portofolio</a></div>
-        <div class="link-top-menu3"><a class="link" href="contact.html">Contact</a></div>
+      <div class="page-header__nav">
+        <div class="page-header__nav--1">
+          <a class="page-header__link" href="index.html">Studio</a>
+        </div>
+        <div class="page-header__nav--2">
+          <a class="page-header__link" href="portofolio.html">Portofolio</a>
+        </div>
+        <div class="page-header__nav--3">
+          <a class="page-header__link" href="contact.html">Contact</a>
+        </div>
       </div>
       <div class="email-tel">
-        <div class="email-group">
-          <svg class="email">
+        <div class="email-tel__email">
+          <svg class="email-tel__icon">
             <use xlink:href="../images/sprite-svg/contacts-top-defs.svg#icon-envelope" />
           </svg>
-          <a class="top-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="email-tel__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </div>
-        <div class="tel-group">
-          <svg class="tel">
+        <div class="email-tel__tel">
+          <svg class="email-tel__icon">
             <use xlink:href="../images/sprite-svg/contacts-top-defs.svg#icon-smartphone" />
           </svg>
-          <a class="top-contacts" href="tel:+12127724150">+1 212-772-4150</a>
+          <a class="email-tel__contacts" href="tel:+12127724150">+1 212-772-4150</a>
         </div>
       </div>
     </header>
     <!--Main section-->
     <main>
       <!--portofolio services-->
-      <section class="section">
-        <div class="filter-menu">
-          <button class="filter-button" type="button">All</button>
-          <button class="filter-button" type="button">Web-sites</button>
-          <button class="filter-button" type="button">Apps</button>
-          <button class="filter-button" type="button">Design</button>
-          <button class="filter-button" type="button">Marketing</button>
+      <section class="section portofolio">
+        <div class="portofolio__menu">
+          <button class="portofolio__btn" type="button">All</button>
+          <button class="portofolio__btn" type="button">Web-sites</button>
+          <button class="portofolio__btn" type="button">Apps</button>
+          <button class="portofolio__btn" type="button">Design</button>
+          <button class="portofolio__btn" type="button">Marketing</button>
         </div>
         <!--Products-->
         <div class="portofolio-products">
-          <ul>
-            <li class="card">
-              <img
-                class="img-service"
-                src="images/tehchnoduck.jpg"
-                alt="laptop"
-                style="width: auto"
-              />
-
-              <div class="product-name">
-                <h4>Technoduck</h4>
-                <p>Web-site</p>
+          <ul class="products">
+            <li class="products__card">
+              <img src="images/tehchnoduck.jpg" alt="laptop" style="width: auto" />
+              <div class="products__item">
+                <h4 class="products__item--title">Technoduck</h4>
+                <p class="products__item--category">Web-site</p>
               </div>
-              <div class="overlay">
-                <p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">
                   Technoduck is a state-of-the-art coronavirus distribution platform. Companies use
                   this platform for digital espionage and attacks on competitors' secure servers.
                 </p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/poster_basket.jpg" alt="basket-players" style="width: auto" />
-              <div class="product-name">
-                <h4>Poster New Orlean vs Golden Star</h4>
-                <p>Design</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Poster New Orlean vs Golden Star</h4>
+                <p class="products__item--category">Design</p>
               </div>
-              <div class="overlay">
-                <p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">
                   Prin încercare și eroare, am ajuns la o soluție. Probabil nu e cea mai elegantă
                   soluție, dar arată ca în Figma
                 </p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img
                 src="images/sea-food-restaurant.jpg"
                 alt="sea-food-restaurant"
                 style="width: auto"
               />
-              <div class="product-name">
-                <h4>Seafood Restaurant</h4>
-                <p>Apps</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Seafood Restaurant</h4>
+                <p class="products__item--category">Apps</p>
               </div>
-              <div class="overlay">
-                <p>Unde nu-i cap, vai de picioare.</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">Și era noapte</p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/headphones.jpg" alt="headphones" style="width: auto" />
-              <div class="product-name">
-                <h4>Project Prime</h4>
-                <p>Marketing</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Project Prime</h4>
+                <p class="products__item--category">Marketing</p>
               </div>
-              <div class="overlay">
-                <p>Nu toate mustele fac miere.</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">Nu toate muștele fac miere.</p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/two-boxes.jpg" alt="two-boxes" style="width: auto" />
-              <div class="product-name">
-                <h4>Project Boxes</h4>
-                <p>Apps</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Project Boxes</h4>
+                <p class="products__item--category">Apps</p>
               </div>
-              <div class="overlay">
-                <p>Vine o zi când se va sfârși</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">Vine o zi când se va sfârși</p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/monitor.jpg" alt="monitor" style="width: auto" />
-              <div class="product-name">
-                <h4>Inspiration has no Borders</h4>
-                <p>Web-site</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Inspiration has no Borders</h4>
+                <p class="products__item--category">Web-site</p>
               </div>
-              <div class="overlay">
-                <p>Îmi place că orice problemă poate avea mai multe soluții sub formă de cod.</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">
+                  Îmi place că orice problemă poate avea mai multe soluții sub formă de cod.
+                </p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/magazine.jpg" alt="magazine" style="width: auto" />
-              <div class="product-name">
-                <h4>Limited Edition</h4>
-                <p>Design</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Limited Edition</h4>
+                <p class="products__item--category">Design</p>
               </div>
-              <div class="overlay">
-                <p>Am utilizat z-index</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">Am utilizat z-index</p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/label.jpg" alt="label" style="width: auto" />
-              <div class="product-name">
-                <h4>Project LAB</h4>
-                <p>Marketing</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Project LAB</h4>
+                <p class="products__item--category">Marketing</p>
               </div>
-              <div class="overlay">
-                <p>Din aproape în aproape.</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">Din aproape în aproape.</p>
               </div>
             </li>
-            <li class="card">
+            <li class="products__card">
               <img src="images/laptop-on-desk.jpg" alt="laptop-on-desk" style="width: auto" />
-              <div class="product-name">
-                <h4>Growing Business</h4>
-                <p>Apps</p>
+              <div class="products__item">
+                <h4 class="products__item--title">Growing Business</h4>
+                <p class="products__item--category">Apps</p>
               </div>
-              <div class="overlay">
-                <p>YES!</p>
+              <div class="products__overlay">
+                <p class="products__overlay--text">YES!</p>
               </div>
             </li>
           </ul>
@@ -164,43 +165,50 @@
       <!--footer-->
       <footer class="footer">
         <div>
-          <h2 class="footer-logo">
-            <span class="logo-part1">Web</span><span class="logo-part3">Studio</span>
-          </h2>
-          <address class="address">695 Park Ave, NY 10065, USA</address>
-          <a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <a class="footer-contacts" href="tel:+12127724150">+1 212-772-4150</a>
+          <div class="footer__logo">
+            <p class="logo__text">Web<span class="logo--white">Studio</span></p>
+          </div>
+          <address class="footer__address">695 Park Ave, NY 10065, USA</address>
+          <a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="footer__contacts" href="tel:+12127724150">+1 212-772-4150</a>
         </div>
-        <div class="social-footer">
-          <div class="find-on-us">
-            <p class="footer-connections">FIND US ON</p>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+        <div class="footer__social">
+          <div>
+            <p class="footer__action-text">FIND US ON</p>
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-instagram-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-twitter-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-facebook-f" />
               </svg>
             </div>
-            <div class="icon-footer">
-              <svg class="icon-sm-footer">
+            <div class="footer__social-media">
+              <svg class="footer__social-media--icon">
                 <use href="./images/sprite-svg/sm-footer-defs.svg#icon-linkedin-f" />
               </svg>
             </div>
           </div>
           <div class="newsletter">
-            <p class="footer-connections">SUSCRIBE TO NEWSLETTER</p>
-            <div class="form-newsletter">
-              <input type="text" name="email" id="email" placeholder="E-mail" required />
-              <button type="submit" class="btn-submit-newsletter">
-                <span>Suscribe</span>
+            <p class="footer__action-text">SUSCRIBE TO NEWSLETTER</p>
+            <div class="newsletter_form">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+                class="newsletter--input"
+              />
+              <button type="submit" class="newsletter__btn">
+                <span class="newsletter__btn--text">Suscribe</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
                   <path
                     fill="#fff"

@@ -2,7 +2,7 @@
   width: 1600px;
 }
 
-.box-customers {
+.costumers__box {
   width: 170px;
   height: 92px;
   border: 1px solid;
@@ -11,33 +11,25 @@
   justify-content: center;
   align-items: center;
   color: #afb1b8;
-  fill: currentColor;
+  &:hover {
+    color: $accent-color;
+    cursor: pointer;
+    transition: var(--transition);
+  }
 }
 
-div .box-customers:hover,
-:active {
-  color: #2196f3;
-  cursor: pointer;
-}
-
-/*de verificat daca functioneaza tranzitia de mai jos*/
-.box-customers svg:hover,
-:active {
-  color: #2196f3;
-  transition-property: var(--link-active-color);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-}
-
-.regular-customers {
-  display: flex;
-  padding-left: 215px;
-  gap: 30px;
-}
-
-.icon-customers {
+.costumers--icon {
   width: 106px;
   height: 60px;
   color: #afb1b8;
   border: none;
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.costumers__block {
+  display: flex;
+  padding-left: 215px;
+  gap: 30px;
 }
